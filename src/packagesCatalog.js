@@ -145,7 +145,9 @@ export function oneshotInstallHints() {
     clawdbotGo: "npm i -g clawdbot-go",
     clawdbotInstall: "npx cheshire-terminal-agents clawdbot-install",
     clawdbotInfo: "npx cheshire-terminal-agents clawdbot-info",
-    zeroclawd: "https://cheshireterminal.ai/zeroclawd",
+    zeroclawd: "https://cheshireterminal.ai/zero-clawd",
+    zeroClawdGithub: "https://github.com/Solizardking/Zero-clawd",
+    zeroClawdInstall: "https://install.cheshireterminal.ai",
     clawdbotNpm: "https://www.npmjs.com/package/clawdbot-go",
     root: ROOT,
   };

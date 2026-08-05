@@ -12,7 +12,9 @@ export const CLAWDBOT_GO_NPM = "clawdbot-go";
 export const CLAWDBOT_GO_NPM_URL = "https://www.npmjs.com/package/clawdbot-go";
 export const CLAWDBOT_GO_REGISTRY_LATEST =
   "https://registry.npmjs.org/clawdbot-go/latest";
-export const ZERO_CLAWD_HOSTED_URL = "https://cheshireterminal.ai/zeroclawd";
+export const ZERO_CLAWD_HOSTED_URL = "https://cheshireterminal.ai/zero-clawd";
+export const ZERO_CLAWD_GITHUB = "https://github.com/Solizardking/Zero-clawd";
+export const ZERO_CLAWD_INSTALL_HOST = "https://install.cheshireterminal.ai";
 export const ZERO_CLAWD_DEFAULT_AGENT_BASE = "http://127.0.0.1:18800";
 
 /** @typedef {"oneshot" | "skills" | "npm-global" | "npm-local"} ClawdbotInstallMode */
@@ -34,12 +36,16 @@ export function clawdbotGoInstallHints() {
     skills: "npx clawdbot-go skills-install --force",
     skillsList: "npx clawdbot-go skills",
     hosted: ZERO_CLAWD_HOSTED_URL,
-    hostedAliases: ["/zeroclawd", "/clawdbot-go", "/clawdbot"],
+    hostedAliases: ["/zero-clawd", "/zeroclawd", "/clawdbot-go", "/clawdbot"],
+    github: ZERO_CLAWD_GITHUB,
+    installHost: ZERO_CLAWD_INSTALL_HOST,
+    installCurl: `curl -fsSL ${ZERO_CLAWD_INSTALL_HOST} | bash`,
     defaultAgentBase: ZERO_CLAWD_DEFAULT_AGENT_BASE,
     cors: "export CLAWDBOT_CORS_ORIGINS=https://cheshireterminal.ai",
     note:
       "cheshire-terminal-agents is catalog/forge + nested TS packages. " +
       "clawdbot-go is the Zero Clawd runtime (skills prepackage + optional full stack). " +
+      "Source: github.com/Solizardking/Zero-clawd · install.cheshireterminal.ai. " +
       "Install both when you need identity forge and a local agent console.",
     bridgeCommands: {
       info: "npx cheshire-terminal-agents clawdbot-info",

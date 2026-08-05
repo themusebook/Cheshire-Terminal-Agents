@@ -24,7 +24,7 @@ const packageJsonPath = path.join(
 test("clawdbot-go external package is catalogued and not a hard dependency", () => {
   assert.equal(CLAWDBOT_GO_NPM, "clawdbot-go");
   assert.equal(CLAWDBOT_GO_NPM_URL, "https://www.npmjs.com/package/clawdbot-go");
-  assert.equal(ZERO_CLAWD_HOSTED_URL, "https://cheshireterminal.ai/zeroclawd");
+  assert.equal(ZERO_CLAWD_HOSTED_URL, "https://cheshireterminal.ai/zero-clawd");
   assert.deepEqual(listExternalPackageIds(), ["clawdbot-go"]);
   const entry = getExternalPackage("clawdbot-go");
   assert.equal(entry.kind, "external-npm");
@@ -44,7 +44,9 @@ test("clawdbotGoInstallHints points at npm package and hosted /zeroclawd", () =>
   assert.equal(h.installLocal, "npm i clawdbot-go");
   assert.equal(h.installGlobal, "npm i -g clawdbot-go");
   assert.equal(h.oneshot, "npx clawdbot-go install");
-  assert.equal(h.hosted, "https://cheshireterminal.ai/zeroclawd");
+  assert.equal(h.hosted, "https://cheshireterminal.ai/zero-clawd");
+  assert.equal(h.github, "https://github.com/Solizardking/Zero-clawd");
+  assert.equal(h.installHost, "https://install.cheshireterminal.ai");
   assert.match(h.cors, /CLAWDBOT_CORS_ORIGINS/);
   assert.match(h.bridgeCommands.install, /clawdbot-install/);
 });
@@ -53,7 +55,7 @@ test("oneshotInstallHints includes clawdbot bridge commands", () => {
   const h = oneshotInstallHints();
   assert.match(h.clawdbotGo, /clawdbot-go/);
   assert.match(h.clawdbotInstall, /clawdbot-install/);
-  assert.equal(h.zeroclawd, "https://cheshireterminal.ai/zeroclawd");
+  assert.equal(h.zeroclawd, "https://cheshireterminal.ai/zero-clawd");
   assert.equal(h.clawdbotNpm, "https://www.npmjs.com/package/clawdbot-go");
 });
 
@@ -83,5 +85,5 @@ test("runClawdbotInstall --dry-run does not spawn and returns plan", () => {
   assert.equal(result.dryRun, true);
   assert.equal(result.plan.package, "clawdbot-go");
   assert.equal(result.results.length, 0);
-  assert.match(result.plan.after.connect, /zeroclawd/);
+  assert.match(result.plan.after.connect, /zero-clawd|zeroclawd/);
 });

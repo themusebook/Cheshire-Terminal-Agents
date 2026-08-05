@@ -54,6 +54,8 @@ export {
   CLAWDBOT_GO_NPM_URL,
   CLAWDBOT_GO_REGISTRY_LATEST,
   ZERO_CLAWD_HOSTED_URL,
+  ZERO_CLAWD_GITHUB,
+  ZERO_CLAWD_INSTALL_HOST,
   ZERO_CLAWD_DEFAULT_AGENT_BASE,
   EXTERNAL_PACKAGE_CATALOG,
   clawdbotGoInstallHints,
@@ -137,7 +139,8 @@ export const HUB_URL = "https://cheshireterminal.ai/agents";
 export const FORGE_URL = "https://cheshireterminal.ai/agents/forge";
 export const LIVE_FEED_URL = "https://cheshireterminal.ai/agents/live";
 export const MINT_URL = "https://cheshireterminal.ai/agents/mint";
-export const ZERO_CLAWD_URL = "https://cheshireterminal.ai/zeroclawd";
+export const ZERO_CLAWD_URL = "https://cheshireterminal.ai/zero-clawd";
+export const ZERO_CLAWD_INSTALL = "https://install.cheshireterminal.ai";
 export const CATALOG_API = "https://cheshireterminal.ai/api/clawd/browser-agents";
 
 /** Dual-rail omni mint plan schema version (Solana Metaplex + RH ERC-8004 + optional zk-omni). */
