@@ -1,22 +1,22 @@
 {
   "name": "cheshire-terminal-agents",
   "version": "1.48.1",
-  "description": "Cheshire Terminal Agents — dual-chain identity forge (Robinhood Chain EVM + Solana SVM), dual-rail omni mint with LayerZero zk-omni, production agent catalog, plus optional clawdbot-go (Zero Clawd) install bridge for cheshireterminal.ai/agents and /zeroclawd",
+  "description": "Musebook Agents — dual-chain identity forge (Robinhood Chain EVM + Solana SVM), dual-rail omni mint with LayerZero zk-omni, production agent catalog, plus optional clawdbot-go (Zero Clawd) install bridge for musebook.trade/agents and /zeroclawd",
   "type": "module",
   "sideEffects": false,
   "license": "MIT",
-  "author": "Cheshire Terminal <operators@cheshireterminal.ai>",
+  "author": "Musebook Agents",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Solizardking/Cheshire-Terminal-Agents.git"
+    "url": "git+https://github.com/themusebook/Cheshire-Terminal-Agents.git"
   },
-  "homepage": "https://cheshireterminal.ai/agents",
+  "homepage": "https://musebook.trade/agents",
   "bugs": {
-    "url": "https://github.com/Solizardking/Cheshire-Terminal-Agents/issues"
+    "url": "https://github.com/themusebook/Cheshire-Terminal-Agents/issues"
   },
   "keywords": [
-    "cheshire-terminal",
-    "cheshire-terminal-agents",
+    "musebook",
+    "musebook-agents",
     "ai-agents",
     "defi",
     "erc-8004",
