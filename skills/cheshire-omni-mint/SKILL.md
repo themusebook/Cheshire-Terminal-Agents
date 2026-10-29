@@ -4,11 +4,11 @@ description: >
   Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood
   Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni
   (msgType 4 dual_identity_link). Use when the user wants omnichain identity,
-  Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire
-  Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai.
+  Solana and Robinhood together, Metaplex mintAgent + RH register, or Musebook
+  Agents dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai.
 ---
 
-# Cheshire Omni Mint (Solana + Robinhood)
+# Musebook Omni Mint (Solana + Robinhood)
 
 Become **both** rails in one logical agent identity:
 
