@@ -2,7 +2,7 @@
   "name": "@cheshire/layerzero-omnichain",
   "version": "0.1.0",
   "private": true,
-  "description": "Cheshire LayerZero omnichain notes and interface stubs (Solana ↔ Robinhood). Canonical OApp/OFT implementations live in my-lz-oapp/.",
+  "description": "Musebook LayerZero omnichain notes and interface stubs (Solana ↔ Robinhood). Canonical OApp/OFT implementations live in my-lz-oapp/.",
   "license": "MIT",
   "files": [
     "README.md",
