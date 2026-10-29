@@ -1,11 +1,11 @@
-# Cheshire LayerZero Omnichain (Solana ↔ Robinhood)
+# Musebook LayerZero Omnichain (Solana ↔ Robinhood)
 
 > Canonical OFT, authenticated OApp, and lzRead implementations all live in
 > `my-lz-oapp/`. This directory is retained only for protocol notes; its legacy
 > Endpoint-direct contracts were removed because they were not ReadCodecV1 /
 > official OApp implementations and were unsafe deployment targets.
 
-Omnichain mesh for **Cheshire Terminal** `/zero`:
+Omnichain mesh for **Musebook** `/zero`:
 
 | Standard | Role |
 |----------|------|
