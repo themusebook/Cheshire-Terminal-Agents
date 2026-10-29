@@ -1,4 +1,4 @@
-# Cheshire ZK Omnichain Messaging
+# Musebook ZK Omnichain Messaging
 
 Nullifier-bound messaging between **Robinhood Chain** and **Solana** for agent intents, attestations, and encrypted-state commitments — with a deployable relayer, Solana receiver, Zero Clawd CLI, and agent TUI.
 
