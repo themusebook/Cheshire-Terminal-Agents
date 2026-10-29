@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://cheshireterminal.ai/schemas/clawdAgentSchema.v1.json",
-  "title": "Cheshire Terminal Agent Definition",
-  "description": "Schema for agents published in the Cheshire Terminal hub (cheshireterminal.ai/agents). Extends the upstream Sperax v1 schema with Solana-native metadata and optional EVM agent identity capabilities.",
+  "title": "Musebook Agent Definition",
+  "description": "Schema for agents published in the Musebook Agents hub (musebook.trade/agents). Extends the upstream Sperax v1 schema with Solana-native metadata and optional EVM agent identity capabilities.",
   "type": "object",
   "required": [
     "author",
