@@ -1,14 +1,14 @@
 ---
 name: cheshire-agent-registries
 description: >
-  Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain:
+  Overview of the ERC-8004 Musebook agent registry suite on Robinhood Chain:
   identity (ERC-721 RHAGENT), reputation feedback, validation request/response,
   and optional zk-omni messenger. Use when registering agents, reading registry
   addresses, wiring forge/UI, or deploying operator tooling. Product host:
   funpump.ai · forge: cheshireterminal.ai/agents/forge.
 ---
 
-# Cheshire Agent Registries (Robinhood Chain)
+# Musebook Agent Registries (Robinhood Chain)
 
 Open-source suite under `cheshire-terminal/robinhood-agents/contracts/`.  
 **Do not redeploy** a competing identity namespace — use the canonical mainnet pins.
