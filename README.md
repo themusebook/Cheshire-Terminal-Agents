@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="./assets/cheshire-terminal-agents.svg" alt="Animated Cheshire Terminal Agents banner — dual-chain identity forge and production agent catalog" width="100%" />
+  <img src="./assets/cheshire-terminal-agents.svg" alt="Animated Musebook Agents banner — dual-chain identity forge and production agent catalog" width="100%" />
 </p>
 
-# Cheshire Terminal Agents
+# Musebook Agents
 
 <p align="center">
   <strong>Catalog + forge. One package for agent prompts and on-chain identity.</strong><br/>
-  Ship Cheshire-schema agents, then register them on Robinhood Chain (EVM / ERC-8004),
+  Ship Musebook-schema agents, then register them on Robinhood Chain (EVM / ERC-8004),
   Solana (SVM / Metaplex Core), or <em>both rails</em> with optional LayerZero zk-omni link
-  through the Cheshire Terminal hub.
+  through the Musebook Agents hub.
 </p>
 
 <p align="center">
-  <a href="https://cheshireterminal.ai/agents"><img src="https://img.shields.io/badge/OPEN_AGENT_HUB-75f58b?style=for-the-badge&labelColor=07140d" alt="Open Agent Hub"></a>
-  <a href="https://cheshireterminal.ai/agents/forge"><img src="https://img.shields.io/badge/OPEN_AGENT_FORGE-c084fc?style=for-the-badge&labelColor=12081f" alt="Open Agent Forge"></a>
+  <a href="https://musebook.trade/agents"><img src="https://img.shields.io/badge/OPEN_AGENT_HUB-75f58b?style=for-the-badge&labelColor=07140d" alt="Open Agent Hub"></a>
+  <a href="https://musebook.trade/agents"><img src="https://img.shields.io/badge/OPEN_AGENT_FORGE-c084fc?style=for-the-badge&labelColor=12081f" alt="Open Agent Forge"></a>
   <a href="https://www.npmjs.com/package/cheshire-terminal-agents"><img src="https://img.shields.io/badge/npm-cheshire--terminal--agents-ff8ad8?style=for-the-badge&labelColor=1b0b18" alt="npm package"></a>
   <a href="https://www.npmjs.com/package/clawdbot-go"><img src="https://img.shields.io/badge/npm-clawdbot--go-CB3837?style=for-the-badge&labelColor=1b0b18&logo=npm&logoColor=white" alt="clawdbot-go npm package"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-9f8cff?style=for-the-badge&labelColor=100b1d" alt="MIT license"></a>
@@ -27,21 +27,24 @@
   <img src="https://img.shields.io/badge/ERC--8004_REGISTRIES-DEPLOYED-f5c36b?style=flat-square" alt="ERC-8004 registries deployed">
 </p>
 
-**Cheshire Terminal Agents** (`cheshire-terminal-agents` on npm) is the unified open-source package for:
+**Musebook Agents** (`cheshire-terminal-agents` on npm — package name unchanged, see the rebrand note below) is the unified open-source package for:
 
-1. **Agent catalog** — Cheshire-schema JSON agents (DeFi specialists + character personas), locales, and schema validation  
+1. **Agent catalog** — Musebook-schema JSON agents (DeFi specialists + character personas), locales, and schema validation  
 2. **Identity forge** — dual-chain registration (Robinhood Chain EVM + Solana SVM) with fail-closed safety  
 
-Hosted surfaces: [agent hub](https://cheshireterminal.ai/agents) · [agent forge](https://cheshireterminal.ai/agents/forge) · [catalog API](https://cheshireterminal.ai/api/clawd/browser-agents)
+Hosted surfaces: [agent hub](https://musebook.trade/agents) · [agent forge](https://cheshireterminal.ai/agents/forge) · [catalog API](https://cheshireterminal.ai/api/clawd/browser-agents)
+
+> [!NOTE]
+> **Rebranded 2026-10-29:** this repository — formerly **Cheshire Terminal Agents** — is now **Musebook Agents**, part of the [themusebook](https://github.com/themusebook) org, with its home at [musebook.trade](https://musebook.trade) and the agent hub at [musebook.trade/agents](https://musebook.trade/agents). The rebrand is presentational: the npm package name (`cheshire-terminal-agents`), CLI binaries, schema files, contract names, deployed addresses, and the hosted forge/API endpoints (still served from cheshireterminal.ai) are unchanged by design — renaming any of those would break consumers, deployed namespaces, or live runtime calls.
 
 > [!IMPORTANT]
-> **Deployment and availability checked July 19, 2026:** identity, reputation, and validation registries are deployed on Robinhood Chain testnet (`46630`) and mainnet (`4663`). The [live Cheshire registry configuration](https://cheshireterminal.ai/api/robinhood/agents/config) exposes committed addresses, enforces `committed-manifest-only`, and reports runtime-code checks. The [Solana health endpoint](https://cheshireterminal.ai/api/metaplex-agents/health) reports `mainnet-beta` and discloses treasury, mint policy, authority model, holder gate, and finality. These are live-chain surfaces, not blanket consent: re-fetch trust responses, review the exact action, and obtain explicit wallet confirmation before any submission.
+> **Deployment and availability checked July 19, 2026:** identity, reputation, and validation registries are deployed on Robinhood Chain testnet (`46630`) and mainnet (`4663`). The [live registry configuration](https://cheshireterminal.ai/api/robinhood/agents/config) exposes committed addresses, enforces `committed-manifest-only`, and reports runtime-code checks. The [Solana health endpoint](https://cheshireterminal.ai/api/metaplex-agents/health) reports `mainnet-beta` and discloses treasury, mint policy, authority model, holder gate, and finality. These are live-chain surfaces, not blanket consent: re-fetch trust responses, review the exact action, and obtain explicit wallet confirmation before any submission.
 
 ## What this package provides
 
 | Surface | Included | Deliberate boundary |
 |---|---|---|
-| **Agent catalog** | 53 Cheshire-schema agents under `agents/`, 17-language locales, `schema/Cheshire_agent_schema.json`, import + validate scripts | Prompts + metadata only — not a trading bot runtime |
+| **Agent catalog** | 53 Musebook-schema agents under `agents/`, 17-language locales, `schema/Cheshire_agent_schema.json`, import + validate scripts | Prompts + metadata only — not a trading bot runtime |
 | **JavaScript SDK** | Metadata, unsigned EVM calldata, canonical deployment pins, runtime-code checks, Solana signing envelopes, hosted calls, catalog loaders | No private-key custody, automatic wallet signing, or bundled TypeScript declarations |
 | **CLI** | Catalog list/show/validate; read-only forge discovery; local/hosted EVM prepare; explicit Solana mint | No silent EVM broadcast; no hidden live-write default |
 | **Robinhood Chain** | Identity / Reputation / Validation contracts + `4663` / `46630` manifests | Identity is ERC-721; no fungible launcher |
@@ -56,7 +59,7 @@ Hosted surfaces: [agent hub](https://cheshireterminal.ai/agents) · [agent forge
 ```mermaid
 flowchart TB
   subgraph catalog [Agent catalog]
-    S[src prompts] --> V[Cheshire schema]
+    S[src prompts] --> V[Agent schema]
     V --> A[agents/*.json]
     A --> L[locales]
   end
@@ -72,7 +75,7 @@ flowchart TB
     O --> Z[zk-omni dual_identity_link]
   end
   A --> M
-  catalog --> HUB[cheshireterminal.ai/agents]
+  catalog --> HUB[musebook.trade/agents]
   forge --> HUB
 ```
 
@@ -382,7 +385,7 @@ Live deliver needs `RH_RPC_URL` + `ZK_OMNI_MESSENGER_ROBINHOOD` + key (or `ZK_OM
 | **Total catalog IDs** | **53** | Under `agents/` |
 | Locale trees | 43 | Under `locales/` (characters are EN-primary) |
 
-Every catalog agent uses:
+Every catalog agent uses (catalog data ships as-is in this rebrand — the `author` / `homepage` values below are the published data fields, unchanged):
 
 | Field | Value |
 |---|---|
@@ -545,9 +548,9 @@ curl -fsS https://cheshireterminal.ai/api/robinhood/agents/config \
 ## Project layout
 
 ```text
-cheshire-terminal-agents/          # package root (repo folder: robinhood-agents/)
+Cheshire-Terminal-Agents/          # repo root — Musebook Agents (npm package: cheshire-terminal-agents)
 ├── assets/cheshire-terminal-agents.svg
-├── agents/                        # 53 Cheshire catalog agents
+├── agents/                        # 53 Musebook catalog agents
 ├── locales/                       # i18n overlays
 ├── schema/Cheshire_agent_schema.json
 ├── contracts/                     # ERC-8004 registry suite
@@ -601,8 +604,10 @@ npm run pack:check
 | `1.43.0` | First catalog-only npm publish |
 | **`1.44.0`** | **Unified Cheshire Terminal Agents** — catalog + dual-chain forge (this package) |
 
+**Rebrand (2026-10-29):** this package is now presented as **Musebook Agents** ([themusebook](https://github.com/themusebook) org · [musebook.trade/agents](https://musebook.trade/agents)), formerly Cheshire Terminal Agents. The npm name, CLI binaries, schema, and contracts are unchanged.
+
 Legacy package name `@cheshire-terminal/robinhood-agents` and CLI alias `robinhood-agents` remain documented for migrations. Prefer `cheshire-terminal-agents` / `ct-agents`.
 
 ## License
 
-[MIT](LICENSE) © Cheshire Terminal contributors.
+[MIT](LICENSE) © Musebook Agents contributors (formerly Cheshire Terminal contributors).
