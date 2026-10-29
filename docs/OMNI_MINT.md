@@ -8,7 +8,7 @@ Mint one logical agent as **two chain-scoped identities**, then optionally bind 
 | **Robinhood Chain** | ERC-721 ERC-8004 registry record | Local unsigned `register(agentURI)` calldata |
 | **Link** | Nullifier-bound dual_identity_link | `CheshireZkOmniMessenger` / `programs/zk_omni` |
 
-Hosted surfaces: [forge](https://cheshireterminal.ai/agents/forge) · [hub](https://cheshireterminal.ai/agents) · [live](https://cheshireterminal.ai/agents/live)
+Hosted surfaces: [hub](https://musebook.trade/agents) · [forge](https://cheshireterminal.ai/agents/forge) · [live](https://cheshireterminal.ai/agents/live)
 
 > Identity ≠ fungible token. This flow does **not** launch a bonding-curve coin on either chain.
 
@@ -112,7 +112,7 @@ Aligned with Metaplex **Mint an Agent** (mpl-agent-registry ≥ 0.2.0):
 - `uri` → on-chain Core asset NFT metadata
 - `agentMetadata` → off-chain API storage (type, name, description, services, registrations, supportedTrust)
 - Single atomic tx: Core mint + Agent Identity PDA
-- Networks: `solana-mainnet`, `solana-devnet` (also Eclipse/Sonic/Fogo in Metaplex API; Cheshire omni defaults to Solana + RH)
+- Networks: `solana-mainnet`, `solana-devnet` (also Eclipse/Sonic/Fogo in Metaplex API; Musebook omni defaults to Solana + RH)
 
 ## Safety
 
