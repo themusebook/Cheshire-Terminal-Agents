@@ -1,7 +1,7 @@
-# Local setup checklist (robinhood-agents)
+# Local setup checklist (Musebook Agents)
 
 Package: **cheshire-terminal-agents** `1.48.1`  
-Root: monorepo path `robinhood-agents/` · GitHub: [Solizardking/Cheshire-Terminal-Agents](https://github.com/Solizardking/Cheshire-Terminal-Agents)
+Root: monorepo path `robinhood-agents/` · GitHub: [themusebook/Cheshire-Terminal-Agents](https://github.com/themusebook/Cheshire-Terminal-Agents)
 
 ## Prerequisites
 
