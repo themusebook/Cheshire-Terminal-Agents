@@ -1,7 +1,7 @@
-# Cheshire Solana Agent Trust
+# Musebook Solana Agent Trust
 
 Anchor program implementing Solana-native reputation and validation records for
-MPL Core-backed Cheshire agent identities.
+MPL Core-backed Musebook agent identities.
 
 The program is not deployed. `declare_id!` is a development placeholder and
 must be replaced with a reviewed deployment key before any cluster deployment.
